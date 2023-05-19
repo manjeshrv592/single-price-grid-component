@@ -1,0 +1,235 @@
+/* CSS Variables */
+:root {
+  /* Colors */
+  --cyan: #2ab2af;
+  --bright-yellow: #c0df34;
+  --light-gray: #e5eff5;
+  --grayish-blue: #98a6bd;
+  --white: #fff;
+
+  /* Theming */
+  --body-bg: var(--light-gray);
+  --font-body: 'Karla', sans-serif;
+}
+
+/* Basic reset */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--body-bg);
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1.4rem;
+  letter-spacing: 0.17px;
+  line-height: 2.6rem;
+}
+
+img,
+picture,
+video {
+  display: inline-block;
+  width: 100%;
+}
+
+/* Typography */
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.h1 {
+  font-size: 2rem;
+  letter-spacing: -0.25px;
+}
+
+.h2 {
+  font-size: 1.8rem;
+  letter-spacing: -0.22px;
+}
+
+.h3 {
+  font-size: 1.5rem;
+  letter-spacing: -0.19px;
+}
+
+.fs-md {
+  font-size: 1.6rem;
+}
+
+/* Container */
+.container {
+  min-height: 100vh;
+  padding: 2.8rem 1.6rem;
+  display: grid;
+  place-items: center;
+}
+
+/* Button */
+.btn {
+  border: none;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.btn-warning {
+  color: var(--white);
+  background-color: var(--bright-yellow);
+}
+
+/* Card */
+.card {
+  width: 100%;
+  max-width: 37.5rem;
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  box-shadow: 0 1.5rem 3rem rgba(0, 81, 171, 0.15);
+  overflow: hidden;
+}
+
+.card-message,
+.card-pricing,
+.card-que {
+  padding: 2.8rem 2.4rem;
+}
+
+/* Pricing */
+.pricing {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.pricing-count {
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+.pricing-duration {
+  font-size: 1.6rem;
+  opacity: 0.5;
+}
+
+/*******************************/
+/* UTILS */
+/*******************************/
+
+/* Color */
+.color-cyan {
+  color: var(--cyan);
+}
+
+.color-yellow {
+  color: var(--bright-yellow);
+}
+
+.color-blue {
+  color: var(--grayish-blue);
+}
+
+.color-white {
+  color: var(--white);
+}
+
+/* Background color */
+.bg-cyan {
+  background-color: var(--cyan);
+}
+
+.bg-yellow {
+  background-color: var(--bright-yellow);
+}
+
+.bg-blue {
+  background-color: var(--grayish-blue);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+/* Margins */
+.mb-lg {
+  margin-bottom: 2.4rem;
+}
+
+.mb-md {
+  margin-bottom: 1.6rem;
+}
+
+.mb-sm {
+  margin-bottom: 0.8rem;
+}
+
+/* Width */
+.w-100 {
+  width: 100%;
+}
+
+/**************************************/
+/* Responsive styling */
+/**************************************/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .card {
+    border-radius: 0.8rem;
+    max-width: 63.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .h1 {
+    font-size: 2.4rem;
+  }
+
+  .h3 {
+    font-size: 1.8rem;
+  }
+
+  .card-message,
+  .card-pricing,
+  .card-que {
+    padding: 4rem;
+  }
+
+  .card-message {
+    font-size: 1.6rem;
+    grid-column: 1 / -1;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
